@@ -1,0 +1,899 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}  
+
+
+*{
+    box-sizing: inherit;
+}
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+    box-sizing: border-box;
+}
+
+body {
+    width: 450px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+
+/* Street Taco Nav and Image Content */
+header, nav h2 {
+    visibility: hidden;
+}
+
+menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+menu button {
+    display: flex;
+    flex-flow: column-reverse;
+    border: none;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+menu button:hover {
+    background-color: black;
+    color:#FFF;
+    opacity: 0.5;
+    transition: all .5s ease-out;
+}
+
+#save, #share, #print, #jump {
+    color: #EB5428;
+    font-family: 'Bebas Neue';
+}
+
+h2, h3 {
+    font-family: 'Bebas Neue';
+    font-weight:400; 
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.img-content, div img{
+    width: 450px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:1.6;
+    margin-left: 10px
+}
+
+/* Details */
+h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2;
+    
+}
+
+dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left:-110px
+  }
+
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    
+}
+dd:nth-child(8) {
+    position: relative;
+    left: -140px;
+}
+dd:nth-child(10) {
+    position: relative;
+    left: -130px;
+}
+
+/*Ingrediants & Directions*/
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul{ 
+    list-style-type: disc;
+    margin-left: 25px;
+    line-height: 2;
+}
+ol li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: decimal;
+    padding-left: 10px;
+    margin-left: 25px;
+    margin-right:10px;
+    line-height:1.5
+}
+
+/*Sides*/
+.sides {
+    background-color: #7ABFBF;
+}
+
+.sides section {
+    height: 140px;
+}
+
+
+.sides h3 {
+    text-align: unset;
+    position: relative;
+    left: 135px;
+    padding-bottom: 0px;
+}
+
+.sides img {
+    width: 25%;
+    margin-left: 10px;
+    position: relative;
+    top: -25px;
+}
+
+.sides figcaption, .sides p, .stars {
+    position: relative;
+    top: -100px;
+    left: 125px;
+    line-height: 1.5;
+}
+.stars {
+    position: relative;
+    left: 125px;
+}
+
+.sides section:hover {
+    background-color: orange;
+    opacity: 0.5;
+    transition: all .5s ease-out;
+}
+
+.sides svg {
+    fill: #EB5428;
+}
+.sides section:nth-child(3) svg {
+    fill: #EB5428;
+}
+
+.sides section svg:last-of-type {
+    fill: #ffffff;
+}
+
+.sides section svg:first-of-type {
+    margin-left: 8px;
+}
+
+figcaption {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+    margin-left: 10px;
+    text-transform: initial;
+}
+
+input {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+footer {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: #FFF;
+}
+footer img {
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+footer div {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+footer small {
+    margin-top: 5px;
+}
+#social {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+/*Switching Order*/
+.social-media {
+    display: flex;
+    flex-flow: column;
+}
+#social li {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+}
+#social a {
+    text-decoration: none;
+    color: #EB5428;
+    display: flex;
+    flex-flow: column-reverse;
+}
+#social a svg {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#social span {
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+#social span:hover {
+    background-color: #EB5428;
+    color: #FFF;
+    transition: all .75s ease-out;
+}
+footer h3, footer h2 {
+    display: none;
+}
+.social_name {
+    display: block;
+}
+
+/*Main Nav*/
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    margin-left: 2px;
+    position: relative;
+    user-select: none;
+    width: 89px;
+    height: 81px;
+    z-index: 20;
+}
+
+
+nav label span {
+    background-color: #FFF;
+    display: block;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+nav label span:before, nav label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+nav label span:before {
+    top: 5px;
+}
+nav label span:after {
+    top: -5px;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 595px;
+}
+nav input:checked ~ label span {
+    background: transparent;
+}
+nav input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+nav input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+nav input:checked ~ label:not(.steps) span:before, nav input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+.menu_links {
+    color: #000;
+}
+
+/*Menu Dropdown*/
+nav a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align:center;
+    margin-left: -2px;
+    padding-left: 25px;
+    padding-right: 80px;
+}
+nav a img{ 
+    visibility: hidden;
+}
+/*Menu label*/
+nav li:first-child span {
+    position: absolute;
+    top: 50px;
+   
+}
+/*sign-in label*/
+nav li:last-child span {
+    position: absolute;
+    top: 53px;
+    padding-left: 0px;
+    margin-left: -15px;
+}
+
+/*Burger svg*/
+nav h2 {
+    width: 45px;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 39px;
+}
+nav svg {
+    position: absolute;
+    top: 10px;
+    margin-left: 44px;
+}
+
+nav label:hover {
+    background-color: rgba(235,84,40,.4);
+    border-radius: 60px;
+    margin-left:18px;
+}
+
+/*Knife svg*/
+nav li:first-child svg {
+    background-color: #EB5428;
+    width: 227px;
+    position: absolute;
+    top: 0;
+    margin-left: 69px;
+    margin-right: 58px;
+    height: 83px;
+    z-index: 50;
+}
+
+/*Sign in svg*/
+nav li:last-child svg {
+    stroke: #EB5428;
+    width: 44px;
+    margin-top: 10px;
+    margin-left: -15px;
+    position: absolute;
+    top: 0;
+}
+nav li:last-child a {
+    margin-left: 2px;
+    position: absolute;
+    top: 0;
+    height: 85px;
+    width: 90px;
+}
+nav li:last-child a:hover {
+    background-color: rgba(235,84,40,.4);
+    border-radius: 60px;
+}
+
+nav {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    order: -3;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, .25);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul img, nav ul svg {
+    width: 20%;
+}
+
+nav a:hover {
+    background-color: #EB5428;
+    transition: all .5s ease-out;
+}
+
+nav a, nav span {
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+
+/*Search Bar*/
+#search_bar {
+    order: -1;
+    display: flex;
+    height: 50px;
+    width: 300px;
+    align-self: center;
+}
+#search_bar h2 {
+    display: none;
+}
+#search_bar label {
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#search_bar input {
+    border: 3px solid #EB5428;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#search_bar button {
+    background-color: #EB5428;
+    border: 2px solid #EB5428;
+}
+#search_bar button svg {
+    stroke: #FFF;
+}
+
+
+@media screen and (min-width:768px) {
+    body {
+        width: 768px;
+    }
+   
+    .img-content, div img{
+        width: 768px;
+    }
+    
+    /*Details*/
+    
+    .details{
+        text-align: center;
+        }
+    dt{
+        position:relative;
+        left:130px
+    }
+
+    dd{
+        position:relative;
+        left: -140px
+    }
+    dt:nth-child(7){
+        position:relative;
+        left:110px;
+    }
+
+    /*Ingredients & Directions*/
+    .ing_direct {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .ingredients h3{
+        margin-right:80px;
+    
+    }
+    /*Side Dishes*/
+    .sides {
+        display: grid;
+        grid-template-areas:
+        "h2 h2" 
+        "section1 section2" 
+        "section3 section4";
+    }
+    .sides h2 {
+        grid-area: h2;
+    }
+    .sides section {
+        height: 135px;
+    }
+    .sides section h3 {
+        margin-left: -10px;
+    }
+    .sides figure {
+        margin-left: -10px;
+    }
+    .sides p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .stars {
+        left: 165px;
+        top: -128px;
+        padding-left: 5px
+    }
+    menu {
+        margin-bottom: -20px;
+        margin-right: 0;
+        margin-top: -115px;
+        position: relative;
+        top: 100px;
+        background-color: rgba(249,249,249,0.7);
+        padding-bottom: 45px;
+    }
+    menu button {
+        background-color: unset;
+        margin-top: 30px
+    
+    }
+    
+    nav ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    nav label span, nav input {
+        display: none;
+    }
+    
+
+     /*Remove Icons */
+    nav ul li:first-child span{
+        display: none;
+    }
+    
+    nav a img{ 
+        visibility: visible;
+    }
+    
+    nav svg {
+        position: absolute;
+        top: 30px;
+        margin-left: 60px;
+    }
+    nav label:hover, nav label {
+        display: none;
+    }
+    /*Reposition Knife svg*/
+    nav li:first-child svg {
+        background-color: #EB5428;
+        position: absolute;
+        top: 0;
+        margin-top: -100px;
+        margin-left: -40px;
+        margin-right: 0;
+        width: 100px;
+        height: 98px;
+    }
+    /*Reposition sign-in label*/
+    nav li:last-child svg {
+        stroke: #EB5428;
+        width: 95px;
+        position: absolute;
+        top: 0;
+        margin-top: 11px;
+        margin-right: -200px;
+    }
+    nav li:last-child span {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        margin-left: 190px;
+        width: 90px;
+        color: #000;
+    }
+    nav li:last-child a {
+        margin-left: -96px;
+        margin-top: -30px;
+        position: absolute;
+        top: -68px;
+        height: 83px;
+        width: 86px;
+    }
+    nav li:last-child a:hover {
+        background-color: rgba(235,84,40,.4);
+        transition: all .5s ease-out;
+    }
+    #search_bar {
+        margin-left: 300px;
+        margin-top: 25px;
+        order: -60;
+    }
+    nav {
+        position: relative;
+        top: 30px;
+        height: 136px;
+        box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, .25);
+    }
+    nav li:nth-child(2) {
+        margin-top: 2px;
+        margin-left: -80px;
+    }
+    nav a {
+        flex-flow: column-reverse;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 17px;
+        margin-left: 1px;
+        margin-right: 3px;
+    }
+    nav a span:hover {
+        color: #FFF;
+        transition: all .5s ease-out;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul img {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    nav li {
+        display: flex;
+        align-items: start;
+    }
+    nav li a {
+        padding-right: 0;
+        width: 90px;
+    }
+   
+    .menu_links {
+        color: #EB5428;
+    }
+    footer div img{
+        padding:200px
+    }
+
+
+}
+@media screen and (min-width:1280px) {
+    body {
+        width: 1280px;
+        background-color: #F2F2F2;
+    } 
+    .img-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width:460px;
+        margin-left:149px;
+        margin-top: -1032px;
+    }
+  
+    menu {
+        background-color: #FFF;
+        border: 3px solid #EB5428;
+        flex-flow: column;
+        width: 150px;
+        align-items: center;
+        margin-top: -100px;
+        height: 1152px;
+    }
+    
+    .img-content p{
+        display:contents;
+        line-height:1.5;
+    }
+    
+    /*Details Banner*/
+    .details {
+        background-color: #000;
+        color: #7ABFBF;
+        height: 115px;
+    }
+    
+    dl {
+        display: grid;
+        grid-template-areas: 
+        "dt1 dt2 dt3 dt4 dt5"
+        "dd1 dd2 dd3 dd4 dd5";
+        margin-left: 95px;
+        grid-column-gap: 100px;
+        line-height: 1.5;
+        margin-top:15px;
+    }
+    
+    dt, dt:nth-child(7) {
+        width: 145px;
+        position: relative;
+        left:-60px;
+    }
+    
+    dd, dd:nth-child(8) {
+        width: 145px;
+        position: relative;
+        left:-20px;
+    }
+    
+    dd:nth-of-type(1) {
+        grid-area: dd1;
+        margin-left:-30px
+    }
+    dd:nth-of-type(2) {
+        grid-area: dd2;
+        margin-left: -30px;
+    }
+    dd:nth-of-type(3) {
+        grid-area: dd3;
+        margin-left: -30px;
+    }
+    dd:nth-of-type(4) {
+        grid-area: dd4;
+        margin-left: -15px
+    }
+    dd:nth-of-type(5) {
+        grid-area: dd5;
+        margin-left: 75px
+    } 
+    
+    /*Ingredients & Directions*/
+    .ingredients h3{
+        margin-right:225px
+    }
+    
+    /*Sides*/
+    .sides {
+        grid-template-areas:
+        "h2     h2    h2    h2" 
+        "section1 section2 section3 section4";
+        height: 452px;
+    }
+    .sides section {
+        height: 422px;
+        padding-top: 125px;
+    }
+    .sides section h3 {
+        margin-left: -94px;
+        left: 138px;
+        top: 127px;
+    }
+    .sides figure {
+        margin-left: -35px;
+      }
+    .sides img {
+        width: 66%;
+        margin-left: 79px;
+        top: -147px;
+    }
+    .sides p {
+        margin-left: -51px;
+        padding-top: 0;
+        padding-bottom: 7px;
+    }
+    .sides figcaption {
+        margin-left: -49px;
+        top: -100px;
+        left: 130px;
+    }
+    .stars {
+        left: 80px;
+        top: -128px;
+    }
+
+    .sides section:hover {
+       height: 382px;
+    }
+
+    nav {
+        top: 5px;
+        background-color: #FFF;
+    }
+    nav li {
+        margin-left: 25px;
+    }
+    nav li:first-child {
+        margin-left: 185px;
+    }
+    nav li:first-child svg {
+        margin-top: 21px;
+        margin-left: -332px;
+        top: -26px;
+        padding: 36px;
+        width: 140px;
+        height: 141px;
+    }
+    nav li:nth-child(2) {
+        margin-left: -66px;
+    }
+    nav li:last-child a {
+        margin-left: 59px;
+        margin-top: 86px;
+    }
+    nav li:last-child span {
+        margin-top: 51px;
+        margin-left: 26px;
+    }
+    nav li:last-child svg {
+        margin-top: 13px;
+        margin-right: -5px;
+    }
+    #search_bar {
+        order: -2;
+        margin-left: 1px;
+        margin-top: 34px;
+    }
+    #social {
+        margin-left: 300px;
+        margin-top: -2px;
+    }
+    #social li {
+        padding-left: 66px;
+    }
+
+    footer div img{
+        margin-left:-800px;
+        margin-bottom:200px;
+    }
+    
+    footer small {
+        margin-top: -400px;
+        margin-left: -25px;
+    }
+}
